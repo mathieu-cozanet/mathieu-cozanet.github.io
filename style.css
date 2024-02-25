@@ -44,6 +44,27 @@
     justify-content: center;
     align-items: center;
 }
+            /*! ICI l'animation de ma souris */
+.circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    pointer-events: none;
+    position: fixed;
+    /* top: -10rem;
+    left: -10rem; */
+    height: 2rem;
+    width: 2rem;
+    transition: transform 0.4s, background 0.4s;
+    z-index: 102;
+}
+
+.circle.big {
+    background: white;
+    transform: scale(2);
+    position: absolute;
+    z-index: 99;
+}
 
 .card{
     width: 100%;
@@ -59,26 +80,15 @@
     left: 0;
 }
 
-/* .card{
-    width: 100%;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
-    color: white;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    left: 0;
-} */
-
-.card h1{
-    color: #16a085;
+/* .card h1{
+    position: relative; 
+    color: #16a085; 
     font-family: 'Advent Pro', sans-serif;
     font-family: 'Open Sans', sans-serif;
-}
+    z-index: 200;
+} */
 
-.card img{
+/* .card img{
     position: absolute;
     z-index: 1;
     left: 0;
@@ -86,11 +96,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .card-content{
     position: absolute;
-    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
@@ -102,8 +111,12 @@
 }
 
 .card-content h1{
+    position: relative;
     font-size: 40px;
     text-shadow: 1px 1px 10px black;
+    color: #16a085;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-content p{
@@ -113,24 +126,35 @@
     text-align: center;
 }
 
-                                    /* Skill bars */
+            /*! Skill bars */
 
 .container {
     width: 25%; 
     background-color: #000000; 
-  }
-  
-  .skills {
+}
+
+.skills {
     text-align: right; 
     padding-top: 10px; 
     padding-bottom: 10px; 
     color: white; 
-  }
-  
-  .html {width: 60%; background-color: #04AA6D;} 
-  .css {width: 50%; background-color: #2196F3;} 
-  .js {width: 5%; background-color: #f44336;} 
-  .php {width: 5%; background-color: #808080;} 
+}
+
+.html {
+    width: 60%; background-color: #04AA6D;
+} 
+
+.css {
+    width: 50%; background-color: #2196F3;
+} 
+
+.js {
+    width: 5%; background-color: #f44336;
+} 
+
+.php {
+    width: 5%; background-color: #808080;
+} 
 
             /*! ICI l'animation de mon Header */
 
@@ -196,25 +220,6 @@ animation-iteration-count: infinite;
     color: #16a085;
 line-height: 40px;
 margin: 0;
-}
-        /*! ICI l'animation de ma souris */
-.circle {
-    border: 2px solid white;
-    border-radius: 50%;
-    box-shadow: 0 0 10px white;
-    pointer-events: none;
-    position: fixed;
-    /* top: -10rem;
-    left: -10rem; */
-    height: 2rem;
-    width: 2rem;
-    transition: transform 0.4s, background 0.4s;
-    z-index: 9999;
-}
-
-.circle.big {
-    background: white;
-    transform: scale(2);
 }
 
             /*! ICI l'adaptation aux différents ecrans */
