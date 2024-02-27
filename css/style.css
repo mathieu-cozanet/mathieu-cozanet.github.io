@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    background-color: #0F0F0F
+    background-color: #07001c
 }
 
 section{
@@ -79,6 +79,13 @@ section{
     margin-bottom: 10px;
 }
 
+.content .text-box a{
+    color: #fff;
+}
+.content .text-box a:hover{
+    color: #fff;
+}
+
 .media-icons{
     margin-top: 100px;
 }
@@ -134,4 +141,4 @@ section{
 
 .sec-03{
     margin-bottom: 100px;
-}    
+}
