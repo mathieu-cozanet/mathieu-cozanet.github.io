@@ -1,4 +1,4 @@
-const menu = document.getElementById('menu');
+// const menu = document.getElementById('menu');
 const btn = document.getElementById('btn');
 const circle = document.getElementById('circle');
 
